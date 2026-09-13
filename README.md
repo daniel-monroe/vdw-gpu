@@ -10,3 +10,8 @@ The checkpoint records an array `best_primes` where `best_primes[L]` is the larg
 w(k;2)>(k−1)⋅best_primes[k−1]+1
 
 Simply `pip install -r requirements.txt` in your environment then run `nohup python vdw.py &`.
+
+## Results
+Running `vdw.py` on primes up to 24 billion took around four weeks on four RTX 3090 GPUs whereas a distributed computing project with hundreds of volunteers took over a year to do the same computation for primes up to 24 billion. Our results match theirs for the k = 8 through 24:
+
+`[0, 0, 0, 0, 0, 0, 0, 1069, 3389, 11497, 17863, 58013, 136859, 239873, 608789, 1091339, 2899861, 5357603, 13919273, 27700919, 70483537, 122954173, 282097363, 477395357, 1138900957, 2125065391, 4195501393, 8758090373, 20968447439, 23999633509, 23999998277, 23999998769]`
